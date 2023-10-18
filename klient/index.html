@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Login</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+    <hr>
+    <div id="jwtInfo" style="display: none;"> <!-- Sett standard display til 'none' for å skjule den ved oppstart -->
+        <hr>
+        <h2>JWT Token</h2>
+        <textarea id="encodedToken" rows="5" cols="50" placeholder="Encoded JWT will appear here..."></textarea>
+        <h2>Decoded JWT</h2>
+        <pre id="decodedToken">Decoded JWT will appear here...</pre>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
